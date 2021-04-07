@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :posts
-  root 'pages#index'
+  # root 'pages#index'
+  root 'pages#home'
   get '/home'=>'pages#home' #override default route
   get '/user/:id'=>'pages#profile'
   get '/explore'=>'pages#explore'
