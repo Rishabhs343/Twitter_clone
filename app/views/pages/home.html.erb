@@ -1,42 +1,38 @@
   <br/>
   <div class="row">
     <div class="col">
-      <div class="jumbotron">
-            <h1 class="display-4">Hello, <%= @username %></h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-        </div>
-    </div>
-</div>
-
-
-
-  <div class="row">
-    <div class="col">
       <div class="panel panel-default">
-        <div class="panel-body"><p align='center' style="border:orange; border-width:5px; border-style:solid;">stats</p></div>
+        <div class="panel-body"><p align='center' style="border:grey; border-width:1px; border-style:solid;">stats</p></div>
         </div>
     </div>
     <div class="col-6">
+      <%= render '/components/post_form' %>
       <% @posts.each do |p| %>
-      <div class="panel panel-default">
-        <div class="panel-body"><p align='center'  style="border:orange; border-width:5px; border-style:solid;">
-        <%= p.content %>
-        </p></div>
+      <div class="panel panel-default post-panel">
+        <div class="panel-body">
+        <p>
+          <div class="col-sm-1">
+            <%= image_tag "/img/no_image.png", style: 'height:50px;width:100px;' %>
+          </div>
+          <div align="center" class="col-sm-11">
+          <%= p.content %>
+          </div>
+          <div class="col-sm-12">
+          Links
+          </div>
+        </p>
         </div>
+        </div>
+        <br/>
           <% end %>
     </div>
   
     <div class="col">
       <div class="panel panel-default">
-        <div class="panel-body"><p align='center'  style="border:orange; border-width:5px; border-style:solid;">about</p></div>
+        <div class="panel-body"><p align='center'  style="border:grey; border-width:1px; border-style:solid;">about</p></div>
         </div>
       <div class="panel panel-default">
-        <div class="panel-body"><p align='center' style="border:orange; border-width:5px; border-style:solid;">trend</p></div>
+        <div class="panel-body"><p align='center' style="border:grey; border-width:1px; border-style:solid;">trend</p></div>
         </div>
     </div>
   </div>
