@@ -464,5 +464,43 @@ background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   border:grey; 
   border-width:1px; 
   border-style:solid;
+  background-color: white;
+}
+
+.side-panel{
+  text-align: center;
+  border: gray;
+  border-width: 1px;
+  border-style: solid;
   background-color: white
+}
+
+.post-title {
+  text-align: left;
+  margin-left: 70px;
+  margin-top: -60px;
+}
+
+.post-content {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.post-owner{
+  color: black;
+  font-weight: bold;
+}
+
+.post-time{
+  opacity: 65%;
+}
+
+
+.post-link{
+  opacity: 65%
+}
+
+.post-img{
+  margin-left: 1.5%;
+  margin-right: 25%;
 }
